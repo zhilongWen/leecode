@@ -17,23 +17,28 @@ public class 冒泡排序 {
 
         // 比较 length - 1 次，最后一个无需比较
         for (int i = 0; i < arr.length - 1; i++) {
+
+            // 设定一个标记，若为true，则表示此次循环没有进行交换，也就是待排序列已经有序，排序已经完成。
+            boolean flag = true;
+
             // 从第一个元素开始比较，最后几个元素已经是排好序的
             for (int j = 0; j < arr.length - 1 - i; j++) {
                 if(arr[j] > arr[j+1]){
-                    swap(arr,j,j+1);
+                    Utils.swap(arr,j,j+1);
+                    flag = false;
                 }
             }
+
+            // flag 为 true 表示所有数据已经有序
+            if (flag) break;
+
         }
 
-        System.out.println(Arrays.toString(arr));
+        Utils.print(arr);
 
     }
 
 
-    public static void swap(int[] arr,int left,int right){
-        int tmp = arr[left];
-        arr[left] = arr[right];
-        arr[right] = tmp;
-    }
+
 
 }
