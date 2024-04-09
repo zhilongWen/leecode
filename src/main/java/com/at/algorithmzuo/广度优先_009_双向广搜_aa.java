@@ -17,10 +17,9 @@ package com.at.algorithmzuo;
 // 提交以下所有代码，把主类名改成Main，可以直接通过
 
 import java.io.*;
-import java.time.OffsetTime;
 import java.util.Arrays;
 
-public class 广度优先_双向广搜_aa {
+public class 广度优先_009_双向广搜_aa {
 
     public static int MAXN = 40;
 

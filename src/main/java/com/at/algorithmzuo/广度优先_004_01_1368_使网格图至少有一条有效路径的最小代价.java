@@ -2,7 +2,7 @@ package com.at.algorithmzuo;
 
 import java.util.ArrayDeque;
 
-public class 广度优先_01_1368_使网格图至少有一条有效路径的最小代价 {
+public class 广度优先_004_01_1368_使网格图至少有一条有效路径的最小代价 {
 
     public int minCost(int[][] grid) {
 

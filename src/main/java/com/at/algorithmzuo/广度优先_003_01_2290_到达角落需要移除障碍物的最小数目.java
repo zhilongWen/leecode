@@ -2,7 +2,7 @@ package com.at.algorithmzuo;
 
 import java.util.ArrayDeque;
 
-public class 广度优先_01_2290_到达角落需要移除障碍物的最小数目 {
+public class 广度优先_003_01_2290_到达角落需要移除障碍物的最小数目 {
 
     public int minimumObstacles(int[][] grid) {
 

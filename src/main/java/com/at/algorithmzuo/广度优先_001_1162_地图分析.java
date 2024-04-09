@@ -1,6 +1,6 @@
 package com.at.algorithmzuo;
 
-public class 广度优先_1162_地图分析 {
+public class 广度优先_001_1162_地图分析 {
 
     public static void main(String[] args) {
 

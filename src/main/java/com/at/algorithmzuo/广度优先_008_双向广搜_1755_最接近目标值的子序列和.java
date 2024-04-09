@@ -3,13 +3,13 @@ package com.at.algorithmzuo;
 
 import java.util.Arrays;
 
-public class 广度优先_双向广搜_1755_最接近目标值的子序列和 {
+public class 广度优先_008_双向广搜_1755_最接近目标值的子序列和 {
 
     public static void main(String[] args) {
 
         int[] s = new int[]{5,-7,3,5};
 
-        System.out.println(new 广度优先_双向广搜_1755_最接近目标值的子序列和().minAbsDifference(s, 6));
+        System.out.println(new 广度优先_008_双向广搜_1755_最接近目标值的子序列和().minAbsDifference(s, 6));
 
     }
 

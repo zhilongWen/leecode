@@ -3,7 +3,7 @@ package com.at.algorithmzuo;
 import java.io.*;
 import java.util.Arrays;
 
-public class 动态规划_01背包_aa {
+public class 动态规划_001_01背包_aa {
 
     public static int MAXM = 101;
 

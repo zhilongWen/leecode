@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class 广度优先_双向广搜_127_单词接龙 {
+public class 广度优先_007_双向广搜_127_单词接龙 {
 
     public static void main(String[] args) {
 
@@ -19,7 +19,7 @@ public class 广度优先_双向广搜_127_单词接龙 {
         w.add("robe");
         w.add("lost");
 
-        System.out.println(new 广度优先_双向广搜_127_单词接龙().ladderLength("leet", "code", w));
+        System.out.println(new 广度优先_007_双向广搜_127_单词接龙().ladderLength("leet", "code", w));
 
     }
 

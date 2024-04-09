@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 
-public class 广度优先_691_贴纸拼词 {
+public class 广度优先_002_691_贴纸拼词 {
 
     public static void main(String[] args) {
-        System.out.println(new 广度优先_691_贴纸拼词().minStickers(
+        System.out.println(new 广度优先_002_691_贴纸拼词().minStickers(
                 new String[]{"with", "example", "science"},
                 "thehat"
         ));

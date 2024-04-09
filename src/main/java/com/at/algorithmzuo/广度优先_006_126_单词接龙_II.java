@@ -2,7 +2,7 @@ package com.at.algorithmzuo;
 
 import java.util.*;
 
-public class 广度优先_126_单词接龙_II {
+public class 广度优先_006_126_单词接龙_II {
 
     public static void main(String[] args) {
 
@@ -14,7 +14,7 @@ public class 广度优先_126_单词接龙_II {
         w.add("log");
         w.add("cog");
 
-        List<List<String>> ladders = new 广度优先_126_单词接龙_II().findLadders("hit", "cog", w);
+        List<List<String>> ladders = new 广度优先_006_126_单词接龙_II().findLadders("hit", "cog", w);
 
         System.out.println(ladders);
 
