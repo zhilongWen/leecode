@@ -2,7 +2,7 @@ package com.at.algorithmzuo;
 
 // https://leetcode.cn/problems/daily-temperatures/description/
 
-public class 单调栈_003_907_子数组的最小值之和 {
+public class 单调栈_004_907_子数组的最小值之和 {
 
     public static int MOD = 1000000007;
 
