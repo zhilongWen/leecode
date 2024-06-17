@@ -2,9 +2,6 @@ package com.at.top100;
 
 // https://leetcode.cn/problems/largest-rectangle-in-histogram/description/
 
-import java.util.Arrays;
-import java.util.Stack;
-
 public class _084_柱状图中最大的矩形 {
 
     public int largestRectangleArea(int[] heights) {
@@ -34,28 +31,24 @@ public class _084_柱状图中最大的矩形 {
     public int largestRectangleArea1(int[] heights) {
 
         int len = heights.length;
-        if (len == 0) {
-            return heights[0];
-        }
-        int[] right = new int[len];
-        int[] left = new int[len];
-        Arrays.fill(right, len);
-
-        Stack<Integer> stack = new Stack<>();
+        int[] stack = new int[len];
+        int r = 0, left = 0, curr, ans = 0;
 
         for (int i = 0; i < len; i++) {
 
-            while (!stack.isEmpty() && heights[stack.peek()] >= heights[i]) {
-                right[stack.pop()] = i;
+            while (r > 0 && heights[i] <= heights[stack[r - 1]]) {
+                curr = stack[--r];
+                left = r > 0 ? stack[r - 1] : -1;
+                ans = Math.max(ans, (i - left - 1) * heights[curr]);
             }
 
-            left[i] = stack.isEmpty() ? -1 : stack.peek();
-            stack.push(i);
+            stack[r++] = i;
         }
 
-        int ans = 0;
-        for (int i = 0; i < len; i++) {
-            ans = Math.max(ans, (right[i] - left[i] - 1) * heights[i]);
+        while (r > 0) {
+            curr = stack[--r];
+            left = r > 0 ? stack[r - 1] : -1;
+            ans = Math.max(ans, (len - left - 1) * heights[curr]);
         }
 
         return ans;
