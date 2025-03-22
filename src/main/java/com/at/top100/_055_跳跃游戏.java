@@ -20,4 +20,25 @@ public class _055_跳跃游戏 {
 
         return true;
     }
+
+    public boolean canJump2(int[] nums) {
+
+        int len = nums.length;
+        if (len == 1) {
+            return true;
+        }
+
+        int maxJump = nums[0];
+
+        for (int i = 1; i <= maxJump; i++) {
+
+            maxJump = Math.max(maxJump, i + nums[i]);
+            if (maxJump >= len - 1) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
 }
